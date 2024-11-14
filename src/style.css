@@ -1,0 +1,21 @@
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/285/original/rosiesky.jpg?1731539104);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+}
+
+.box {
+  background-color: #eb7c92bc;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 100px auto 40px auto;
+  width: 615px;
+  display: block;
+}
