@@ -16,9 +16,10 @@
   <body>
     <div class="box">
       <header>
-        <form>
+        <form class="search-form" id="search-form">
           <input
             class="search-input"
+            id="search-input"
             type="search"
             placeholder="Enter a city..."
             required
@@ -48,7 +49,7 @@
           10 km/h
         </div>
 
-        <h1>Lisboa</h1>
+        <h1 id="weather-app-city">Lisboa</h1>
         <h2>Portugal</h2>
         <p class="additional-info">
           Sunday, 20:00
@@ -80,5 +81,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
