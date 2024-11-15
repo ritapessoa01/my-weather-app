@@ -18,4 +18,122 @@ body {
   margin: 100px auto 40px auto;
   width: 615px;
   display: block;
+  font-family: "Noto Sans Display", sans-serif;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.search-input {
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 350px;
+  background-color: #f2c1cbb7;
+  color: #3c0d16e1;
+  margin: 10px;
+  box-shadow: 3px 4px 5px #a14557e1;
+}
+
+.search-button {
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 17px;
+  padding: 11px;
+  border-radius: 6px;
+  border: none;
+  background-color: #a14557e1;
+  color: white;
+  width: 100px;
+  box-shadow: 3px 4px 5px #652532e1;
+}
+
+.search-button:hover {
+  background-color: #8f3345ec;
+  cursor: pointer;
+}
+
+.current-emoji {
+  font-size: 100px;
+  text-shadow: 2px 3px 10px #a14557e1;
+  position: relative;
+  top: -35px;
+}
+
+.current-temperature {
+  font-size: 130px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 5px 5px 4px #a14557e1;
+  position: relative;
+  top: 35px;
+  left: -55px;
+}
+
+.unit {
+  color: #803040;
+  font-weight: 700;
+  font-size: 35px;
+  position: relative;
+  top: -35px;
+  left: -58px;
+}
+
+.current-extras {
+  color: #803040;
+  font-weight: 500;
+  line-height: 10px;
+  position: relative;
+  top: -47px;
+  left: 246px;
+}
+
+.humidity-icon {
+  width: 22px;
+  position: relative;
+  top: 5px;
+}
+
+.wind-icon {
+  width: 22px;
+  position: relative;
+  top: 5px;
+}
+
+h1,
+h2 {
+  text-align: right;
+  color: white;
+  text-shadow: 3px 3px #a14557e1;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 40px;
+  position: relative;
+  top: -165px;
+}
+
+h2 {
+  position: relative;
+  top: -170px;
+}
+
+.additional-info {
+  text-align: right;
+  color: #803040;
+  font-weight: 500;
+  position: relative;
+  top: -180px;
+}
+
+footer {
+  text-align: center;
+  color: #ffe7eb;
+}
+
+a {
+  color: #8f3345ce;
+  text-decoration: none;
+  font-weight: 600;
+  font-style: italic;
 }

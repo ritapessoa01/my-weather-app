@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="src/style.css" />
     <title>My Weather App</title>
   </head>
@@ -10,21 +17,40 @@
     <div class="box">
       <header>
         <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" />
+          <input
+            class="search-input"
+            type="search"
+            placeholder="Enter a city..."
+            required
+          />
+          <input class="search-button" type="submit" value="Search" />
         </form>
       </header>
       <main>
-        <div>⛅<span>21</span>°C</div>
-        <p>
+        <div>
+          <span class="current-emoji">⛅</span>
+          <span class="current-temperature">21</span>
+          <span class="unit">°C</span>
+        </div>
+        <div class="current-extras">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/405/original/drops.png?1731621829"
+            alt="humidity"
+            class="humidity-icon"
+          />
           46%
           <br />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/411/original/weather.png?1731624796"
+            alt="wind"
+            class="wind-icon"
+          />
           10 km/h
-        </p>
+        </div>
 
-        <h1>Lisbon</h1>
+        <h1>Lisboa</h1>
         <h2>Portugal</h2>
-        <p>
+        <p class="additional-info">
           Sunday, 20:00
           <br />
           Cloudy
@@ -32,14 +58,24 @@
       </main>
       <footer>
         Coded by
-        <a href="https://github.com/ritapessoa01" target="_blank">
+        <a
+          href="https://github.com/ritapessoa01"
+          class="profile-link"
+          target="_blank"
+        >
           Rita Pessoa</a
         >, it is
-        <a href="https://github.com/ritapessoa01/my-weather-app" target="_blank"
+        <a
+          href="https://github.com/ritapessoa01/my-weather-app"
+          class="github-link"
+          target="_blank"
           >open-sourced</a
         >
         and hosted on
-        <a href="https://ritas-weather-app.netlify.app/" target="_blank"
+        <a
+          href="https://ritas-weather-app.netlify.app/"
+          class="netlify-link"
+          target="_blank"
           >Netlify</a
         >
       </footer>
