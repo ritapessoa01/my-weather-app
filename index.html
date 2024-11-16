@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>My Weather App</title>
   </head>
@@ -30,7 +30,7 @@
       <main>
         <div>
           <span class="current-emoji">⛅</span>
-          <span class="current-temperature">21</span>
+          <span class="current-temperature" id="current-temperature">21</span>
           <span class="unit">°C</span>
         </div>
         <div class="current-extras">
@@ -49,8 +49,8 @@
           10 km/h
         </div>
 
-        <h1 id="weather-app-city">Lisboa</h1>
-        <h2>Portugal</h2>
+        <h1 id="weather-app-city">Lisbon</h1>
+        <h2 id="weather-app-country">Portugal</h2>
         <p class="additional-info">
           Sunday, 20:00
           <br />
