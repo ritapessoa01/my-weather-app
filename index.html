@@ -29,7 +29,7 @@
       </header>
       <main>
         <div>
-          <span class="current-emoji">⛅</span>
+          <span class="current-emoji" id="current-emoji">⛅</span>
           <span class="current-temperature" id="current-temperature">21</span>
           <span class="unit">°C</span>
         </div>
@@ -39,23 +39,23 @@
             alt="humidity"
             class="humidity-icon"
           />
-          46%
+          <span id="current-humidity">46</span>%
           <br />
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/411/original/weather.png?1731624796"
             alt="wind"
             class="wind-icon"
           />
-          10 km/h
+          <span id="current-wind">10</span> km/h
         </div>
 
         <h1 id="weather-app-city">Lisbon</h1>
         <h2 id="weather-app-country">Portugal</h2>
-        <p class="additional-info">
-          Sunday, 20:00
+        <div class="additional-info">
+          <span id="time">Sunday, 20:00</span>
           <br />
-          Cloudy
-        </p>
+          <span id="current-description">Cloudy</span>
+        </div>
       </main>
       <footer>
         Coded by
