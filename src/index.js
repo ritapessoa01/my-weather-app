@@ -22,6 +22,9 @@ function refreshWeather(response) {
   let currentTime = document.querySelector("#time");
   currentTime.innerHTML = formatDate(date);
 
+  let icon = document.querySelector("#current-emoji");
+  icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-emoji" id="current-emoji"/>`;
+
   console.log(response.data);
 }
 
