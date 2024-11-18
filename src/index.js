@@ -64,3 +64,5 @@ function citySearch(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", citySearch);
+
+updateInfo("Lisbon");
