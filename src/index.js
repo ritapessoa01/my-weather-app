@@ -62,7 +62,31 @@ function citySearch(event) {
   updateInfo(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+      <div class="forecast-day-one">
+       <div class="forecast-date"><strong>${day}</strong></div>
+       <div class="forecast-icon">☀️</div>
+       <div class="forecast-temperatures">
+        <div class="forecast-highest-temperature"><strong>22° </strong></div>
+        <div class="forecast-lowest-temperature"> / 15°</div>
+       </div>
+      </div>
+      `;
+  });
+
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", citySearch);
 
 updateInfo("Lisbon");
+displayForecast();

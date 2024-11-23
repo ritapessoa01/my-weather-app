@@ -20,6 +20,7 @@ body {
   display: block;
   font-family: "Noto Sans Display", sans-serif;
   box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+  max-height: 475px;
 }
 
 .search-input {
@@ -128,6 +129,8 @@ h2 {
 footer {
   text-align: center;
   color: #ffe7eb;
+  position: relative;
+  top: -100px;
 }
 
 a {
@@ -135,4 +138,34 @@ a {
   text-decoration: none;
   font-weight: 600;
   font-style: italic;
+}
+
+.weather-forecast {
+  display: flex;
+  position: relative;
+  top: -130px;
+}
+
+.forecast-day-one {
+  background: #c2576d85;
+  width: 90px;
+  margin: 0 auto;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+.forecast-date {
+  text-align: center;
+  color: #8b394a;
+}
+.forecast-icon {
+  text-align: center;
+  padding: 3px;
+  font-size: 45px;
+}
+.forecast-temperatures {
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
