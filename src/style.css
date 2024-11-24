@@ -130,7 +130,7 @@ footer {
   text-align: center;
   color: #ffe7eb;
   position: relative;
-  top: -100px;
+  top: -110px;
 }
 
 a {
@@ -159,9 +159,9 @@ a {
   color: #8b394a;
 }
 .forecast-icon {
-  text-align: center;
-  padding: 3px;
-  font-size: 45px;
+  display: block;
+  margin: 0 auto;
+  width: 90px;
 }
 .forecast-temperatures {
   text-align: center;
